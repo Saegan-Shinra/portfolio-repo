@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home | My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+
+    <!-- Google Font pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Shared stylesheet for all three pages -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-	<header>
-		<h1>My Personal Portfolio</h1>
+    <header>
+        <h1>My Personal Portfolio</h1>
 
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="about.html">About &amp; Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html" aria-current="page">Home</a>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About &amp; Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<main>
+    <main id="main-content" class="page-grid">
 
-		<section>
-			<h2>Welcome</h2>
+        <section class="card intro-card">
+            <h2>Welcome</h2>
 
-			<p>
-				Hello! Welcome to my personal portfolio.
-			</p>
-		</section>
+            <p>
+                Hello! Welcome to my personal portfolio. I am learning
+                HTML, CSS, and responsive website design.
+            </p>
 
-		<section>
-			<h2>Featured Work</h2>
+            <p>
+                This site is where I share my projects and track my
+                progress as I build my web development skills.
+            </p>
 
-			<article>
-				<h3>Featured Project</h3>
+            <p>
+                <a href="about.html">Learn more about me</a>
+            </p>
+        </section>
 
-				<p>
-					This section will highlight one of my projects.
-				</p>
-			</article>
-		</section>
+        <section class="card">
+            <h2>Featured Work</h2>
 
-	</main>
+            <article>
+                <h3>My Web Development Journey</h3>
 
-	<footer>
-		<p>Created for my portfolio project.</p>
-	</footer>
+                <p>
+                    For this coursework project, I created a webpage
+                    using semantic HTML and styled it with CSS.
+                    I used Grid and media queries to change the
+                    layout for different screen sizes.
+                </p>
 
+                <p>
+                    <a href="https://saegan-shinra.github.io/semantic-html-page/">
+                        View my web development page
+                    </a>
+                </p>
+            </article>
+
+            <p>
+                <a href="projects.html">Explore my projects</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for my portfolio project.</p>
+    </footer>
 </body>
 </html>
