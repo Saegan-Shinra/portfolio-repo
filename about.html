@@ -4,51 +4,88 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About &amp; Contact | My Portfolio</title>
+
+	<!-- Google Font pairing -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+		  rel="stylesheet">
+
+	<!-- Shared stylesheet for all three pages -->
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 
 	<header>
 		<h1>About Me</h1>
 
-		<nav>
+		<nav aria-label="Main navigation">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="projects.html">Projects</a></li>
-				<li><a href="about.html">About &amp; Contact</a></li>
+				<li>
+					<a href="about.html" aria-current="page">
+						About &amp; Contact
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main id="main-content" class="page-grid">
 
-		<section>
-			<h2>About Me</h2>
-
+		<section id="about" class="card intro-card">
+			<h2>My Web Development Journey</h2>
 			<p>
-				I am learning web development and building my skills in HTML,
-				CSS, and website design.
+				I am learning web development because I want to understand
+				how websites are built and improve my technology skills.
 			</p>
 		</section>
 
-		<section>
-			<h2>My Skills</h2>
-
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Git and GitHub</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>Contact Me</h2>
+		<section id="goals" class="card">
+			<h2>My Goals</h2>
 
 			<article>
-				<h3>Contact Information</h3>
-				<p>Email: tbinghamjr@my.campus.edu</p>
-				<p>GitHub: <a href="https://github.com/Saegan-Shinra" target="_blank">Saegan-Shinra</a></p>
+				<h3>Become a Better Developer</h3>
+				<p>
+					I want to become comfortable creating websites
+					from scratch.
+				</p>
 			</article>
+
+			<article>
+				<h3>Build Projects</h3>
+				<p>
+					I want to build projects that I can add to my portfolio.
+				</p>
+			</article>
+		</section>
+
+		<section id="skills" class="card">
+			<h2>Skills I Want to Learn</h2>
+
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>Git and GitHub</li>
+			</ol>
+		</section>
+
+		<section id="contact" class="card contact-card">
+			<h2>Contact Me</h2>
+
+			<p>
+				You can find my projects and follow my progress on GitHub.
+			</p>
+
+			<p>
+				<a href="https://github.com/Saegan-Shinra">
+					Visit my GitHub profile
+				</a>
+			</p>
 		</section>
 
 	</main>
@@ -56,6 +93,5 @@
 	<footer>
 		<p>Created for my portfolio project.</p>
 	</footer>
-
 </body>
 </html>
