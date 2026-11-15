@@ -95,3 +95,88 @@ footer { padding: var(--space-3) var(--space-2); background: var(--navy); color:
 	.project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 	.page-grid, .project-grid { gap: var(--space-4); }
 }
+/* Contact form */
+#contact form {
+    max-width: 650px;
+    margin-top: 24px;
+}
+
+#contact fieldset {
+    min-width: 0;
+    margin: 0 0 24px;
+    padding: 16px;
+    border: 2px solid #53657d;
+    border-radius: 8px;
+}
+
+#contact legend {
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #53657d;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #243247;
+    font: inherit;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    min-height: 44px;
+    padding: 12px 24px;
+    border: 2px solid #153e75;
+    border-radius: 8px;
+    background: #153e75;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #102a43;
+}
+
+#contact input:focus-visible,
+#contact textarea:focus-visible,
+#contact button:focus-visible {
+    outline: 3px solid #153e75;
+    outline-offset: 4px;
+}
+
+/* Written messages and borders identify invalid fields. */
+.form-error {
+    display: none;
+    margin-top: 8px;
+    color: #a31515;
+    font-weight: 600;
+}
+
+#contact input:user-invalid,
+#contact textarea:user-invalid {
+    border: 3px solid #a31515;
+}
+
+#contact input:user-invalid + .form-error,
+#contact textarea:user-invalid + .form-error {
+    display: block;
+}
